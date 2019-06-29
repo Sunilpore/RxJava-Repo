@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
                 .filter(new Predicate<Task>() {
                     @Override
                     public boolean test(Task task) throws Exception {
+                        
+                        //Used for non blocking UI thread operation
+                        //After task.isComplete() onNext() is called for every iteration
 
                         try {
                             Thread.sleep(1000);
