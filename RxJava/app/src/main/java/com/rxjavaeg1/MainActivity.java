@@ -1,8 +1,12 @@
 package com.rxjavaeg1;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.rxjavaeg1.operators.OperatorActivity;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;
@@ -82,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
+        startActivity(new Intent(this, OperatorActivity.class));
 
     }
 
