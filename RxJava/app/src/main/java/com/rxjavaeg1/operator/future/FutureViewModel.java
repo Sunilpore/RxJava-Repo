@@ -9,10 +9,10 @@ import okhttp3.ResponseBody;
 
 public class FutureViewModel extends ViewModel {
 
-    private Repository repository;
+    private FutureRepository repository;
 
     public FutureViewModel() {
-        repository = Repository.getInstance();
+        repository = FutureRepository.getInstance();
     }
 
     public Future<Observable<ResponseBody>> makeFutureQuery(){

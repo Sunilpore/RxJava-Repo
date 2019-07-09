@@ -30,6 +30,21 @@
         </activity>
 
         <activity android:name=".operator.future.FutureActivity" >
+        </activity>
+
+        <activity android:name=".operator.publisher.PublisherActivity" >
+        </activity>
+
+        <activity android:name=".operator.filter.FilterActivity" >
+        </activity>
+
+        <activity android:name=".operator.distinct.DistinctFunActivity" >
+        </activity>
+
+        <activity android:name=".operator.take_and_takewhile.TakeActivity" >
+        </activity>
+
+        <activity android:name=".operator.take_and_takewhile.TakeWhileActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

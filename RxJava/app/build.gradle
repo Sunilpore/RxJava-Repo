@@ -36,9 +36,13 @@ dependencies {
 
     annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
 
+    //LiveData Reactive Stream
+    implementation "android.arch.lifecycle:reactivestreams:1.1.1"
+
     //Rx Java
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
-    implementation 'io.reactivex.rxjava2:rxjava:2.1.13'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
 
     //retrofit
     implementation "com.squareup.retrofit2:adapter-rxjava2:2.5.0"

@@ -13,13 +13,13 @@ import java.util.concurrent.TimeoutException;
 import io.reactivex.Observable;
 import okhttp3.ResponseBody;
 
-public class Repository {
+public class FutureRepository {
 
-    private static Repository instance;
+    private static FutureRepository instance;
 
-    public static Repository getInstance(){
+    public static FutureRepository getInstance(){
         if(instance == null){
-            instance = new Repository();
+            instance = new FutureRepository();
         }
         return instance;
     }
