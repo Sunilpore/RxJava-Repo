@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rxjavaeg1">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,43 +11,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".operator.interval_and_timer.IntervalActivity">
+
+        <activity android:name=".operator.interval_and_timer.IntervalActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".operator.interval_and_timer.TimerActivity" />
+        <activity android:name=".operator.just_range_repeat.JustOperatorActivity" />
+        <activity android:name=".operator.from_operator.FromArrayOperatorActivity" />
+        <activity android:name=".operator.from_operator.FromIterableOperatorActivity" />
+        <activity android:name=".operator.future.FutureActivity" />
+        <activity android:name=".operator.publisher.PublisherActivity" />
+        <activity android:name=".operator.filter.FilterActivity" />
+        <activity android:name=".operator.distinct.DistinctFunActivity" />
+        <activity android:name=".operator.take_and_takewhile.TakeActivity" />
+        <activity android:name=".operator.take_and_takewhile.TakeWhileActivity" />
+        <activity android:name=".operator.transformation.MapTranxActivity" />
+        <activity android:name=".operator.transformation.buffer.SimpleBufferActivity"></activity>
+        <activity android:name=".operator.transformation.buffer.UIBufferActivity">
         </activity>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".operator.transformation.debounce.DebounceActivity">
         </activity>
 
-        <activity android:name=".operator.interval_and_timer.TimerActivity" >
-        </activity>
-
-        <activity android:name=".operator.just_range_repeat.JustOperatorActivity" >
-        </activity>
-
-        <activity android:name=".operator.from_operator.FromArrayOperatorActivity" >
-        </activity>
-
-        <activity android:name=".operator.from_operator.FromIterableOperatorActivity" >
-        </activity>
-
-        <activity android:name=".operator.future.FutureActivity" >
-        </activity>
-
-        <activity android:name=".operator.publisher.PublisherActivity" >
-        </activity>
-
-        <activity android:name=".operator.filter.FilterActivity" >
-        </activity>
-
-        <activity android:name=".operator.distinct.DistinctFunActivity" >
-        </activity>
-
-        <activity android:name=".operator.take_and_takewhile.TakeActivity" >
-        </activity>
-
-        <activity android:name=".operator.take_and_takewhile.TakeWhileActivity" >
+        <activity android:name=".operator.transformation.throttleFirst.ThrottleActivity" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
