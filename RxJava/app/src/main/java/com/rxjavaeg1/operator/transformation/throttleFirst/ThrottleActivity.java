@@ -32,7 +32,7 @@ public class ThrottleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_buffer);
         button = findViewById(R.id.btn_click);
 
         timeSinceLastRequest = System.currentTimeMillis();

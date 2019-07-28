@@ -24,15 +24,14 @@
         <activity android:name=".operator.distinct.DistinctFunActivity" />
         <activity android:name=".operator.take_and_takewhile.TakeActivity" />
         <activity android:name=".operator.take_and_takewhile.TakeWhileActivity" />
-        <activity android:name=".operator.transformation.MapTranxActivity" />
-        <activity android:name=".operator.transformation.buffer.SimpleBufferActivity"></activity>
-        <activity android:name=".operator.transformation.buffer.UIBufferActivity">
+        <activity android:name=".operator.transformation.map.MapTranxActivity" />
+        <activity android:name=".operator.transformation.buffer.SimpleBufferActivity" />
+        <activity android:name=".operator.transformation.buffer.UIBufferActivity"></activity>
+        <activity android:name=".operator.transformation.debounce.DebounceActivity"></activity>
+        <activity android:name=".operator.transformation.throttleFirst.ThrottleActivity">
         </activity>
 
-        <activity android:name=".operator.transformation.debounce.DebounceActivity">
-        </activity>
-
-        <activity android:name=".operator.transformation.throttleFirst.ThrottleActivity" >
+        <activity android:name=".operator.transformation.map.FlatMapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

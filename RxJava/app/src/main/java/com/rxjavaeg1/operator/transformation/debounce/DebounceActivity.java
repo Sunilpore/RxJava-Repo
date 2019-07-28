@@ -24,7 +24,7 @@ public class DebounceActivity extends AppCompatActivity {
     /**
      *TODO : use switchMap() to avoid parallel execution of search query
      *      when result of first query is not recieved yet and still second query is executed then it will cause a problem
-     * @debounce()-> It will filter out conituous emission of emitted Observable data and pass last emitted data if mentioned time-span is pass
+     * @debounce()-> It will filter out conituous emission of emitted Observable data and pass last emitted data if mentioned time-span is pass/time-out
      */
 
 

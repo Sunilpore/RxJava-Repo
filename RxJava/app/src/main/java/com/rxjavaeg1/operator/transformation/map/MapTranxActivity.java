@@ -1,4 +1,4 @@
-package com.rxjavaeg1.operator.transformation;
+package com.rxjavaeg1.operator.transformation.map;
 
 import android.os.Bundle;
 import android.util.Log;
