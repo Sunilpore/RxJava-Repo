@@ -25,6 +25,17 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
+/**
+ * Transform the item(s) emitted by an Observable into Observables, then flatten the emissions from those into a single Observable.
+ * The FlatMap() operator can be very useful in
+ * -> 1. Create Observables out of objects emitted by other Observables
+ * -> 2. Combine multiple Observable sources into a single Observable (that's what's known as "flattening").
+ *
+ *  Note:-
+ *  Because a single Observable is produced from potentially many sources, the final Observable emits results in a random order.
+ *  In other-words, order is not preserved. Depending on your situation, this might matter, this might not.
+ */
+
 public class FlatMapActivity extends AppCompatActivity {
 
     private static final String TAG = "FlatMapActTag";
@@ -44,9 +55,13 @@ public class FlatMapActivity extends AppCompatActivity {
 
         initRecyclerView();
 
+        /**
+         * @concatMap()-> It emits the object(s) while maintaining order.
+         */
+
         getPostsObservable()
-                .subscribeOn(Schedulers.io())
-                .flatMap(new Function<Post, ObservableSource<Post>>() {
+                .subscribeOn(Schedulers.io())                                          // flatmap() for async execution of comments
+                .concatMap(new Function<Post, ObservableSource<Post>>() {             //Use here concatMap() for sequential execution of comments
                     @Override
                     public ObservableSource<Post> apply(Post post) throws Exception {
                         return getCommentsObservable(post);    //return an updated Observable<Post> with comments
