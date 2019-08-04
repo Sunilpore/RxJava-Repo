@@ -26,12 +26,13 @@
         <activity android:name=".operator.take_and_takewhile.TakeWhileActivity" />
         <activity android:name=".operator.transformation.map.MapTranxActivity" />
         <activity android:name=".operator.transformation.buffer.SimpleBufferActivity" />
-        <activity android:name=".operator.transformation.buffer.UIBufferActivity"></activity>
-        <activity android:name=".operator.transformation.debounce.DebounceActivity"></activity>
-        <activity android:name=".operator.transformation.throttleFirst.ThrottleActivity">
+        <activity android:name=".operator.transformation.buffer.UIBufferActivity" />
+        <activity android:name=".operator.transformation.debounce.DebounceActivity" />
+        <activity android:name=".operator.transformation.throttleFirst.ThrottleActivity"></activity>
+        <activity android:name=".operator.transformation.map.FlatMapActivity">
         </activity>
 
-        <activity android:name=".operator.transformation.map.FlatMapActivity">
+        <activity android:name=".operator.transformation.map.switch_map.SwitchMapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,6 +40,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".operator.transformation.map.switch_map.SwitchMapSecondActivity" />
     </application>
 
 </manifest>
